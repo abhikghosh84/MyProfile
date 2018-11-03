@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['django-env.ay3ftedz7e.ap-south-1.elasticbeanstalk.com', 'local
 # Application definition
 
 INSTALLED_APPS = [
+    'profilepage',
+    'apiapp',
     'readingapp',
     'django.contrib.admin',
     'django.contrib.auth',
