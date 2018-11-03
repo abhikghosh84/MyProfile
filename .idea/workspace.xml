@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c017ea1-1dc7-47b9-a899-ec505d80133d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiapp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/apiapp/apiappmain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadingListApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReadingListApp/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadingListApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReadingListApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +46,8 @@
           <entry key="Dockerfile" value="2" />
           <entry key="config" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="37" />
-          <entry key="py" value="25" />
+          <entry key="html" value="39" />
+          <entry key="py" value="27" />
           <entry key="txt" value="1" />
           <entry key="yml" value="2" />
         </counts>
@@ -54,39 +55,72 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Dockerfile" value="2" />
-          <entry key="HTML" value="37" />
+          <entry key="HTML" value="39" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="25" />
+          <entry key="Python" value="27" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="22" />
-          <entry key="html" value="2389" />
-          <entry key="py" value="3021" />
-          <entry key="txt" value="5" />
+          <entry key="html" value="2497" />
+          <entry key="py" value="3372" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2389" />
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="3021" />
+          <entry key="HTML" value="2497" />
+          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="Python" value="3372" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadingListApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="226">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding>
                 <element signature="e#638#670#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apiapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apiapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/apiapp/apiappmain.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -96,8 +130,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -119,7 +153,6 @@
         <option value="$PROJECT_DIR$/templates/profilepage/profilemain.html" />
         <option value="$PROJECT_DIR$/profilepage/urls.py" />
         <option value="$PROJECT_DIR$/profilepage/views.py" />
-        <option value="$PROJECT_DIR$/templates/base/index.html" />
         <option value="$PROJECT_DIR$/readingapp/models.py" />
         <option value="$PROJECT_DIR$/templates/readingapp/createviewtopic.html" />
         <option value="$PROJECT_DIR$/templates/readingapp/edittopic.html" />
@@ -127,7 +160,11 @@
         <option value="$PROJECT_DIR$/readingapp/views.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ReadingListApp/settings.py" />
+        <option value="$PROJECT_DIR$/apiapp/urls.py" />
+        <option value="$PROJECT_DIR$/templates/base/index.html" />
         <option value="$PROJECT_DIR$/ReadingListApp/urls.py" />
+        <option value="$PROJECT_DIR$/apiapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/apiapp/apiappmain.html" />
       </list>
     </option>
   </component>
@@ -159,12 +196,29 @@
             <path>
               <item name="ReadingListApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
+              <item name="apiapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingListApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
               <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReadingListApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingListApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="apiapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReadingListApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReadingListApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,6 +237,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abhik\Desktop\Work Folder\All Projects\3. Python Projects\ReadingListApp\templates\apiapp" />
       <recent name="C:\Users\abhik\Desktop\Work Folder\All Projects\3. Python Projects\ReadingListApp\templates\base" />
       <recent name="C:\Users\abhik\Desktop\Work Folder\All Projects\3. Python Projects\ReadingListApp\templates\profile" />
       <recent name="C:\Users\abhik\Desktop\Work Folder\All Projects\3. Python Projects\ReadingListApp\templates\readingapp" />
@@ -237,6 +292,14 @@
       <option name="presentableId" value="Default" />
       <updated>1540487895014</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding new app - apiapp">
+      <created>1541281001379</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541281001379</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -248,16 +311,16 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3622951" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3622951" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,6 +336,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding new app - apiapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new app - apiapp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/readingapp/apps.py">
@@ -348,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/readingapp/createvieweditsubject.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -421,13 +481,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apiapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReadingListApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="226">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apiapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/apiapp/apiappmain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
