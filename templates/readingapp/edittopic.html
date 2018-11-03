@@ -1,0 +1,38 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="container">
+  <form action="/reading/updatetopic/{{ topic.id }}/{{ subject.id }}" method="post">
+      {% csrf_token %}
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault1">Subject Name</label>
+        <input type="text" class="form-control" placeholder="{{ subject.name }}" id="subname" name="subname" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault2">Topic Name</label>
+        <input type="text" class="form-control" id="topicname" name="topicname" value="{{ topic.name }}">
+    </div>
+       <div class="form-group">
+        <label class="col-form-label" for="inputDefault3">Estimation</label>
+        <input type="text" class="form-control" id="estimation" name="estimation" value="{{ topic.estimation }}">
+    </div>
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault3">% Completion</label>
+        <input type="text" class="form-control" id="pct" name="pct" value="{{ topic.pct_completed }}">
+    </div>
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault4">Embed Link</label>
+        <input type="text" class="form-control" id="url", name="url" value="{{ topic.embed_link }}">
+    </div>
+      <div class="form-group">
+      <label for="exampleTextarea">Details</label>
+      <textarea class="form-control" id="textarea" rows="3" name="textarea">{{ topic.details }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="/reading/viewtopicdetails/{{ topic.id }}/{{ subject.id }}" class="btn btn-primary">Details</a>
+</form>
+
+
+</div>
+
+{% endblock %}

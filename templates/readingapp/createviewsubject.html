@@ -1,0 +1,67 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="container">
+<br>
+<p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Add a Subject
+      </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <form action="createsubject/" method="post">
+      {% csrf_token %}
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault">Subject Name</label>
+        <input type="text" class="form-control" placeholder="Subject Name" id="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="exampleSelect1">Tags</label>
+      <select class="form-control" id="tag" name="tag">
+        <option value="certification">Certification</option>
+        <option value="exam">Other Exam</option>
+        <option value="fun">Fun</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+    </div>
+  </div>
+    <br>
+{%  if subjects %}
+    <div class="card card-body">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">Tag</th>
+      <th scope="col"># of Topics</th>
+      <th scope="col">Total Hours Estimated</th>
+      <th scope="col">Last Modified</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+
+   {%  for subject in subjects %}
+    <tr class="table-light">
+      <th scope="row"><a href="/reading/viewtopic/{{ subject.id }}">{{ subject.name }}</a></th>
+      <td>{{ subject.tag }}</td>
+      <td>{{ subject.count.estimation__count }}</td>
+      <td>{{ subject.total.estimation__sum }}</td>
+      <td>{{ subject.updated_at }}</td>
+      <td>
+          <a class="btn btn-warning" href="/reading/editsubject/{{ subject.id }}">Edit</a>
+          <a class="btn btn-danger" href="/reading/deletesubject/{{ subject.id }}">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+    </div>
+{% endif %}
+</div>
+
+{% endblock %}

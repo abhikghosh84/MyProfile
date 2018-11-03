@@ -1,0 +1,77 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="container">
+<br>
+<p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Add a Topic for {{ subject.name }}
+      </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+  <form action="/reading/createtopic/{{ subject.id }}" method="post">
+      {% csrf_token %}
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault1">Subject Name</label>
+        <input type="text" class="form-control" placeholder="{{ subject.name }}" id="subname", name="subname" readonly="">
+    </div>
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault2">Topic Name</label>
+        <input type="text" class="form-control" placeholder="Topic Name" id="topicname", name="topicname" >
+    </div>
+       <div class="form-group">
+        <label class="col-form-label" for="inputDefault3">Estimation</label>
+        <input type="text" class="form-control" placeholder="30" id="estimation", name="estimation" >
+    </div>
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault4">Embed Link</label>
+        <input type="text" class="form-control" id="url", name="url" >
+    </div>
+      <div class="form-group">
+      <label for="exampleTextarea">Topic Details</label>
+      <textarea class="form-control" id="textarea" name="textarea" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+  </div>
+    <br>
+
+{%  if topics %}
+<div class="card card-body">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Subject Name</th>
+      <th scope="col">Topic Name</th>
+      <th scope="col">Estimation</th>
+      <th scope="col">% Completion</th>
+      <th scope="col">Last Modified</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+
+   {%  for topic in topics %}
+    <tr class="table-light">
+      <th scope="row">{{  forloop.counter }}</th>
+      <th scope="row">{{ subject.name }}</th>
+      <td scope="row"><a href="/reading/viewtopicdetails/{{ topic.id }}/{{ subject.id }}">{{ topic.name }}</a></td>
+      <td>{{ topic.estimation }}</td>
+      <td>{{ topic.pct_completed }}</td>
+      <td>{{ topic.updated_at }}</td>
+      <td>
+          <a class="btn btn-warning" href="/reading/edittopic/{{ topic.id }}/{{ subject.id }}">Edit</a>
+          <a class="btn btn-danger" href="/reading/deletetopic/{{ topic.id }}/{{ subject.id }}">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endif %}
+</div>
+
+{% endblock %}

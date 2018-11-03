@@ -1,0 +1,33 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="container">
+<br>
+<div class="card text-center">
+  <div class="card-header">
+    {{ subject.name }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ topic.name }}</h5>
+    <p class="card-text">
+      <p><small>Estimation: {{ topic.estimation }} | % Completed: {{ topic.pct_completed }}</small></p>
+      <hr>
+      <p>{{ topic.details|linebreaks}}</p>
+      <!--iframe width="1280" height="720" src="https://www.youtube.com/embed/Fa4cRMaTDUI?list=PLWKjhJtqVAbnadueQ-C5keMQQiQau_i0D&amp;ecver=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+      {% if topic.embed_link %}
+        <iframe id="encoder_iframe" height=100% width="75%" src="{{ topic.embed_link }}" allowfullscreen>
+        </iframe>
+      {% endif%}
+      </p>
+      <hr>
+    <a href="/reading/edittopic/{{ topic.id }}/{{ subject.id }}" class="btn btn-primary">Edit</a>
+    <a href="/reading/viewtopic/{{ subject.id }}" class="btn btn-primary">Back</a>
+  </div>
+  <div class="card-footer text-muted">
+      <small>Last updated: {{ topic.updated_at }}</small>
+  </div>
+</div>
+
+</div>
+
+{% endblock %}
